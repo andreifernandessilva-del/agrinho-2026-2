@@ -1,0 +1,170 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #fcfcfc;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Cabeçalho e Menu */
+header {
+    background-color: #1b4332; /* Verde escuro representativo do agro */
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo span {
+    color: #52b788; /* Verde claro para destaque */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #52b788;
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #52b788;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #40916c;
+}
+
+/* Seção Sobre */
+#sobre {
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 32px;
+    color: #1b4332;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Seção Serviços */
+.services-section {
+    background-color: #f4f9f4;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #1b4332;
+    margin-bottom: 40px;
+}
+
+.grid-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+    border-top: 5px solid #52b788;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #1b4332;
+}
+
+/* Rodapé */
+footer {
+    background-color: #112a1e;
+    color: #b7b7b7;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
